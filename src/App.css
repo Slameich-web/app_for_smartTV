@@ -1,38 +1,186 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
 .App {
+  height: 720px;
+  width: 1280px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.videoBG{
+  position: absolute;
+  width: 1280px;
+  left: 0;
+  top: 0;
+  height: 720px;
+  object-fit: cover;
+  transform: translate(0%, 0%);
+  z-index: 0;
+}
+.qr_content{
+  position: relative;
+  width: 251px;
+  height: 357px;
   text-align: center;
+  background-color: #86D3F4;
+  position: relative;
+  top: 250px;
+  left: 1030px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.qr_title{
+  padding-top: 18px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.qr_image{
+  padding-top: 18px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.qr_text{
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.qr_button{
+  width: 156px;
+  height: 52px;
+  background-color: black;
+  color: #86D3F4;
+}
+.qr_small_content{
+  width: 320px;
+  height: 110px;
+  position: relative;
+  top: -250px;
+  left: 1000px;
+}
+.qr_small_image{
+  position: relative;
+  left: 130px;
+  top: -70px;
+}
+.qr_small_text{
+  position: relative;
+  width: 220px;
+  top: 40px;
+  font-size: 20px;
+  font-weight: 800px;
+  left: -90px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.close_button{
+  position: absolute;
+  width: 88px;
+  height: 52px;
+  left: 1170px;
+  font-size: 40px;
+  top: 20px;
+  border: 0;
+  background-color: white;
+}
+.form{
+  position: relative;
+  width:  380px;
+  height: 720px;
+  background-color:#86D3F4;
+}
+.form_title{
+  font-size: 26px;
+  padding-top: 40px;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 600px;
+}
+.phone_number{
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 800;
+}
+.form_text{
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.keyboard{
+  padding-left: 40px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.keyboard_button{
+  margin: 5px;
+  width: 85px;
+  height: 52px;
+  border: 2px solid black;
+  background-color: #86D3F4;
+  font-size: 20px;
+}
+.keyboard_button:hover{
+  color: #fff;
+  background-color: black;
+  transition: 0.5s;
+}
+.keyboard_button_delete{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border: 2px solid black;
+  background-color: #86D3F4;
+  width: 185px;
+  height: 52px;
+  margin: 5px;
+}
+.checkbox{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border: 12px solid black;
+}
+.agreed{
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.agreed_text{
+  padding-left: 70px;
+}
+.сonfirm{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  text-align: center;
+}
+.сonfirm_button{
+  border: 2px solid rgb(56, 56, 56);
+  background-color: #86D3F4;
+  color: rgb(56, 56, 56);
+  width: 300px;
+  height: 50px;
+  font-size: 19px;
+}
+.active_buttton{
+  background-color: black;
+  color: white;
+  border: 0;
+}
+.completed_title{
+  position: relative;
+  top: 300px;
+  font-size: 34px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+.completed_text{
+  position: relative;
+  top: 320px;
+  font-weight: 400;
+  text-align: center;
 }
